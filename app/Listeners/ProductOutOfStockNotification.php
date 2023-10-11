@@ -28,8 +28,8 @@ class ProductOutOfStockNotification
      */
      public function handle(ProductOutOfStock $event)
      {
-        
-    Mail::to('dinaelnaggar03@gmail.com')->send(new OutOfStock($event->product));
+
+    Mail::to('admin@34ml.com')->send(new OutOfStock($event->product));
 
      }
 }
